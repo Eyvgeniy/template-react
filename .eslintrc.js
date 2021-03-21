@@ -12,7 +12,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react'],
-  ignorePatterns: ['dist'],
+  ignorePatterns: ['dist', '__tests__'],
   rules: {
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
   },
