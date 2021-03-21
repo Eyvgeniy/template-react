@@ -7,18 +7,19 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Development',
+      template: 'template.html',
     }),
   ],
+  resolve: { extensions: ['.js', '.jsx'] },
   module: {
     rules: [
       {
-        test: /\.m?js$/,
+        test: /\.m?jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'],
+            presets: ['@babel/preset-env', '@babel/preset-react'],
             plugins: ['@babel/plugin-transform-runtime'],
           },
         },

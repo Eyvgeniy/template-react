@@ -1,8 +1,5 @@
-function component() {
-  const element = document.createElement('div');
-  element.innerHTML = ['Hello', 'webpack'].join(' ');
+import App from './App';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-  return element;
-}
-
-document.body.appendChild(component());
+ReactDOM.render(<App />, document.getElementById('root'));
