@@ -10,4 +10,16 @@ module.exports = merge(common, {
     contentBase: path.resolve(__dirname, '..', 'dist'),
     historyApiFallback: true,
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: [
+          'style-loader',
+          { loader: 'css-loader', options: { sourceMap: true } },
+          { loader: 'postcss-loader', options: { sourceMap: true } },
+        ],
+      },
+    ],
+  },
 });
