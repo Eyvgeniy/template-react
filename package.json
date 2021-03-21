@@ -1,0 +1,27 @@
+{
+  "name": "react-template",
+  "version": "1.0.0",
+  "description": "template for react apps",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "react",
+    "template",
+    "eslint",
+    "prettier",
+    "jest"
+  ],
+  "author": "Eyvgeniy Yagnenkov",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.27.1",
+    "webpack-cli": "^4.5.0"
+  }
+}
